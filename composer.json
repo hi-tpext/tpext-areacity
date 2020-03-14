@@ -1,0 +1,26 @@
+{
+    "name": "ichynul/tpextareacity",
+    "description": "thinkphp extension",
+    "type": "library",
+    "keywords": [
+        "thinkphp"
+    ],
+    "homepage": "http://www.ynyysc.com/",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "ichynul",
+            "email": "ichynul@outlook.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "tpext\\areacity\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    }
+}
