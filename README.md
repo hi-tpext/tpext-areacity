@@ -26,27 +26,53 @@
         $selectA = $this->dataModel->where(['id' => $a])->select();
         $selectT = $this->dataModel->where(['id' => $t])->select();
 
-        $form->divider('', '')->value('省/市/区');
+        $form->fields('省/市/区')->size(2, 10);
 
         $form->select('province', '省份', 4)
             ->optionsData($selectP, 'ext_name')
             ->dataUrl(url('api/areacity/province'), 'ext_name')
+            ->size(3, 9)
             ->withNext(
-
                 $form->select('city', '城市', 4)
                     ->optionsData($selectC, 'ext_name')
-                    ->dataUrl(url('api/areacity/city'), 'ext_name')->withNext(
-
-                    $form->select('area', '区域', 4)
-                        ->optionsData($selectA, 'ext_name')
-                        ->dataUrl(url('api/areacity/area'), 'ext_name')
-                )
+                    ->dataUrl(url('api/areacity/city'), 'ext_name')
+                    ->size(3, 9)
+                    ->withNext(
+                        $form->select('area', '区域', 4)
+                            ->optionsData($selectA, 'ext_name')
+                            ->dataUrl(url('api/areacity/area'), 'ext_name')
+                            ->size(3, 9)
+                    )
             );
+        $form->fieldsEnd();
 
-        $form->divider('', '')->value('省/市/区/镇');
-        $form->select('province2', '省份', 3)->optionsData($selectP, 'ext_name')->dataUrl(url('api/areacity/province'), 'ext_name')->withNext(
-            $form->select('city2', '城市', 3)->optionsData($selectC, 'ext_name')->dataUrl(url('api/areacity/city'), 'ext_name')->withNext(
-                $form->select('area2', '区域', 3)->optionsData($selectA, 'ext_name')->dataUrl(url('api/areacity/area'), 'ext_name')->withNext(
+        $form->fields('省/市/区2')->size(2, 10);//每个下拉隐藏label
+
+        $form->select('province1', '', 3)
+            ->optionsData($selectP, 'ext_name')
+            ->showLabel(false)
+            ->dataUrl(url('api/areacity/province'), 'ext_name')
+            ->size(0, 12)
+            ->withNext(
+                $form->select('city1', '', 3)
+                    ->optionsData($selectC, 'ext_name')
+                    ->showLabel(false)
+                    ->dataUrl(url('api/areacity/city'), 'ext_name')
+                    ->size(0, 12)
+                    ->withNext(
+                        $form->select('area1', '', 3)
+                            ->optionsData($selectA, 'ext_name')
+                            ->showLabel(false)
+                            ->dataUrl(url('api/areacity/area'), 'ext_name')
+                            ->size(0, 12)
+                    )
+            );
+        $form->fieldsEnd();
+
+        $form->fields('省/市/区/镇')->size(2, 10);
+        $form->select('province2', '省份', 3)->optionsData($selectP, 'ext_name')->dataUrl(url('api/areacity/province'), 'ext_name')->size(4, 8)->withNext(
+            $form->select('city2', '城市', 3)->optionsData($selectC, 'ext_name')->dataUrl(url('api/areacity/city'), 'ext_name')->size(4, 8)->withNext(
+                $form->select('area2', '区域', 3)->optionsData($selectA, 'ext_name')->dataUrl(url('api/areacity/area'), 'ext_name')->size(4, 8)->withNext(
                     $form->select('town2', '乡镇', 3)->optionsData($selectT, 'ext_name')->dataUrl(url('api/areacity/town'), 'ext_name')
                 )
             )
