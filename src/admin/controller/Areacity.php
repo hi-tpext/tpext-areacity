@@ -51,28 +51,29 @@ class Areacity extends Controller
             );
         $form->fieldsEnd();
 
-        $form->fields('省/市/区2')->size(2, 10);//每个下拉隐藏label
+        $form->fields('省/市/区2')->size(2, 10)->with(
+            $form->select('province1', '省份', 3)
+                ->optionsData($selectP, 'ext_name')
+                ->showLabel(false)
+                ->dataUrl(url('api/areacity/province'), 'ext_name')
+                ->size(0, 12)
+                ->withNext(
+                    $form->select('city1', '城市', 3)
+                        ->optionsData($selectC, 'ext_name')
+                        ->showLabel(false)
+                        ->dataUrl(url('api/areacity/city'), 'ext_name')
+                        ->size(0, 12)
+                        ->withNext(
+                            $form->select('area1', '区域', 3)
+                                ->optionsData($selectA, 'ext_name')
+                                ->showLabel(false)
+                                ->dataUrl(url('api/areacity/area'), 'ext_name')
+                                ->size(0, 12)
+                        )
+                )
+        ); //每个下拉隐藏label
 
-        $form->select('province1', '', 3)
-            ->optionsData($selectP, 'ext_name')
-            ->showLabel(false)
-            ->dataUrl(url('api/areacity/province'), 'ext_name')
-            ->size(0, 12)
-            ->withNext(
-                $form->select('city1', '', 3)
-                    ->optionsData($selectC, 'ext_name')
-                    ->showLabel(false)
-                    ->dataUrl(url('api/areacity/city'), 'ext_name')
-                    ->size(0, 12)
-                    ->withNext(
-                        $form->select('area1', '', 3)
-                            ->optionsData($selectA, 'ext_name')
-                            ->showLabel(false)
-                            ->dataUrl(url('api/areacity/area'), 'ext_name')
-                            ->size(0, 12)
-                    )
-            );
-        $form->fieldsEnd();
+        //$form->fieldsEnd(); 使用 with 就不需要调用 fieldsEnd
 
         $form->fields('省/市/区/镇')->size(2, 10);
         $form->select('province2', '省份', 3)->optionsData($selectP, 'ext_name')->dataUrl(url('api/areacity/province'), 'ext_name')->size(4, 8)->withNext(
@@ -82,6 +83,8 @@ class Areacity extends Controller
                 )
             )
         );
+
+        //最后一个fields 不需要 fieldsEnd，自动生成[提交/重置]按钮时会自动调用fieldsEnd
 
         return $builder->render();
     }
