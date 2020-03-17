@@ -82,6 +82,23 @@ class Areacity extends Controller
                     $form->select('town2', '乡镇', 3)->optionsData($selectT, 'ext_name')->dataUrl(url('api/areacity/town'), 'ext_name')
                 )
             )
+            , true);
+
+        $form->fill(
+            [
+                'province' => $p,
+                'city' => $c,
+                'area' => $a,
+                //
+                'province1' => $p,
+                'city1' => $c,
+                'area1' => $a,
+                //
+                'province2' => $p,
+                'city2' => $c,
+                'area2' => $a,
+                'town2' => $t,
+            ]
         );
 
         //最后一个fields 不需要 fieldsEnd，自动生成[提交/重置]按钮时会自动调用fieldsEnd
