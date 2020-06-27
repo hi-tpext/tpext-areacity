@@ -15,39 +15,82 @@ class Areacity extends Controller
 
     public function province()
     {
+        $q = input('q');
+
+        $where = [
+            ['deep', 'eq', 0],
+        ];
+
+        if ($q) {
+            $where[] = ['ext_name|name|pinyin_prefix', 'like', "%$q%"];
+        }
+
         return json(
             [
-                'data' => $this->dataModel->where(['deep' => 0])->select(),
+                'data' => $this->dataModel->where($where)->select(),
             ]
         );
     }
 
     public function city()
     {
-        $pid = input('q/d');
+        $q = input('q');
+        $prev_val = input('prev_val/d');
+
+        $where = [
+            ['deep', 'eq', 1],
+            ['pid', 'eq', $prev_val],
+        ];
+
+        if ($q) {
+            $where[] = ['ext_name|name|pinyin_prefix', 'like', "%$q%"];
+        }
+
         return json(
             [
-                'data' => $this->dataModel->where(['pid' => $pid, 'deep' => 1])->select(),
+                'data' => $this->dataModel->where($where)->select(),
             ]
         );
     }
 
     public function area()
     {
-        $pid = input('q/d');
+        $q = input('q');
+        $prev_val = input('prev_val/d');
+
+        $where = [
+            ['deep', 'eq', 2],
+            ['pid', 'eq', $prev_val],
+        ];
+
+        if ($q) {
+            $where[] = ['ext_name|name|pinyin_prefix', 'like', "%$q%"];
+        }
+
         return json(
             [
-                'data' => $this->dataModel->where(['pid' => $pid, 'deep' => 2])->select(),
+                'data' => $this->dataModel->where($where)->select(),
             ]
         );
     }
 
     public function town()
     {
-        $pid = input('q/d');
+        $q = input('q');
+        $prev_val = input('prev_val/d');
+
+        $where = [
+            ['deep', 'eq', 3],
+            ['pid', 'eq', $prev_val],
+        ];
+
+        if ($q) {
+            $where[] = ['ext_name|name|pinyin_prefix', 'like', "%$q%"];
+        }
+
         return json(
             [
-                'data' => $this->dataModel->where(['pid' => $pid, 'deep' => 3])->select(),
+                'data' => $this->dataModel->where($where)->select(),
             ]
         );
     }
@@ -58,18 +101,22 @@ class Areacity extends Controller
         $page = input('page/d');
 
         $page = $page < 1 ? 1 : $page;
-        $pagesize = 100;
+        $pagesize = 30;
 
         if ($q) {
+            $data = $this->dataModel->where(['pinyin_prefix|ext_name|name' => ['like', "%$q%"], 'deep' => 1])->order('pinyin_prefix')->limit(($page - 1) * $pagesize, $pagesize)->select();
             return json(
                 [
-                    'data' => $this->dataModel->where(['pinyin_prefix' => ['like', '%' . $q . '%'], 'deep' => 1])->order('pinyin_prefix')->limit(($page - 1) * $pagesize, $pagesize)->select(),
+                    'data' => $data,
+                    'has_more' => count($data) == $pagesize,
                 ]
             );
         }
+        $data = $this->dataModel->where(['deep' => 1])->order('pinyin_prefix')->limit(($page - 1) * $pagesize, $pagesize)->select();
         return json(
             [
-                'data' => $this->dataModel->where(['deep' => 1])->order('pinyin_prefix')->limit(($page - 1) * $pagesize, $pagesize)->select(),
+                'data' => $data,
+                'has_more' => count($data) == $pagesize,
             ]
         );
     }
