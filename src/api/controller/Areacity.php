@@ -15,7 +15,7 @@ class Areacity extends Controller
 
     public function province()
     {
-        $selected = input('selected/d');
+        $selected = input('selected');
         if ($selected) {
             return json(
                 [
@@ -43,7 +43,7 @@ class Areacity extends Controller
 
     public function city()
     {
-        $selected = input('selected/d');
+        $selected = input('selected');
         if ($selected) {
             return json(
                 [
@@ -80,7 +80,7 @@ class Areacity extends Controller
 
     public function area()
     {
-        $selected = input('selected/d');
+        $selected = input('selected');
         if ($selected) {
             return json(
                 [
@@ -118,7 +118,7 @@ class Areacity extends Controller
 
     public function town()
     {
-        $selected = input('selected/d');
+        $selected = input('selected');
         if ($selected) {
             return json(
                 [
