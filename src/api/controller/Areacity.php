@@ -15,6 +15,15 @@ class Areacity extends Controller
 
     public function province()
     {
+        $selected = input('selected/d');
+        if ($selected) {
+            return json(
+                [
+                    'data' => $this->dataModel->where('id', 'in', $selected)->select(),
+                ]
+            );
+        }
+
         $q = input('q');
 
         $where = [
@@ -34,6 +43,14 @@ class Areacity extends Controller
 
     public function city()
     {
+        $selected = input('selected/d');
+        if ($selected) {
+            return json(
+                [
+                    'data' => $this->dataModel->where('id', 'in', $selected)->select(),
+                ]
+            );
+        }
         $q = input('q');
         $prev_val = input('prev_val/d');
 
@@ -63,6 +80,15 @@ class Areacity extends Controller
 
     public function area()
     {
+        $selected = input('selected/d');
+        if ($selected) {
+            return json(
+                [
+                    'data' => $this->dataModel->where('id', 'in', $selected)->select(),
+                ]
+            );
+        }
+
         $q = input('q');
         $prev_val = input('prev_val/d');
 
@@ -92,6 +118,15 @@ class Areacity extends Controller
 
     public function town()
     {
+        $selected = input('selected/d');
+        if ($selected) {
+            return json(
+                [
+                    'data' => $this->dataModel->where('id', 'in', $selected)->select(),
+                ]
+            );
+        }
+
         $q = input('q');
         $prev_val = input('prev_val/d');
 
