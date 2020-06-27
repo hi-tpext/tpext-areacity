@@ -39,11 +39,19 @@ class Areacity extends Controller
 
         $where = [
             ['deep', 'eq', 1],
-            ['pid', 'eq', $prev_val],
         ];
 
-        if ($q) {
-            $where[] = ['ext_name|name|pinyin_prefix', 'like', "%$q%"];
+        if ($prev_val) {
+            $where[] = ['pid', 'eq', $prev_val];
+            if ($q) {
+                $where[] = ['ext_name|name|pinyin_prefix', 'like', "%$q%"];
+            }
+        } else {
+            if (is_numeric($q)) {
+                $where = ['pid', 'eq', $q];
+            } else {
+                $where[] = ['ext_name|name|pinyin_prefix', 'like', "%$q%"];
+            }
         }
 
         return json(
@@ -60,11 +68,19 @@ class Areacity extends Controller
 
         $where = [
             ['deep', 'eq', 2],
-            ['pid', 'eq', $prev_val],
         ];
 
-        if ($q) {
-            $where[] = ['ext_name|name|pinyin_prefix', 'like', "%$q%"];
+        if ($prev_val) {
+            $where[] = ['pid', 'eq', $prev_val];
+            if ($q) {
+                $where[] = ['ext_name|name|pinyin_prefix', 'like', "%$q%"];
+            }
+        } else {
+            if (is_numeric($q)) {
+                $where[] = ['pid', 'eq', $prev_val];
+            } else {
+                $where[] = ['ext_name|name|pinyin_prefix', 'like', "%$q%"];
+            }
         }
 
         return json(
@@ -81,11 +97,19 @@ class Areacity extends Controller
 
         $where = [
             ['deep', 'eq', 3],
-            ['pid', 'eq', $prev_val],
         ];
 
-        if ($q) {
-            $where[] = ['ext_name|name|pinyin_prefix', 'like', "%$q%"];
+        if ($prev_val) {
+            $where[] = ['pid', 'eq', $prev_val];
+            if ($q) {
+                $where[] = ['ext_name|name|pinyin_prefix', 'like', "%$q%"];
+            }
+        } else {
+            if (is_numeric($q)) {
+                $where = ['pid', 'eq', $prev_val];
+            } else {
+                $where[] = ['ext_name|name|pinyin_prefix', 'like', "%$q%"];
+            }
         }
 
         return json(
