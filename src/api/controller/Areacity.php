@@ -67,7 +67,11 @@ class Areacity extends Controller
             if (is_numeric($q)) {
                 $where = ['pid', 'eq', $q];
             } else {
-                $where[] = ['ext_name|name|pinyin_prefix', 'like', "%$q%"];
+                return json(
+                    [
+                        'data' => [],
+                    ]
+                );
             }
         }
 
@@ -105,7 +109,11 @@ class Areacity extends Controller
             if (is_numeric($q)) {
                 $where[] = ['pid', 'eq', $prev_val];
             } else {
-                $where[] = ['ext_name|name|pinyin_prefix', 'like', "%$q%"];
+                return json(
+                    [
+                        'data' => [],
+                    ]
+                );
             }
         }
 
@@ -143,7 +151,11 @@ class Areacity extends Controller
             if (is_numeric($q)) {
                 $where = ['pid', 'eq', $prev_val];
             } else {
-                $where[] = ['ext_name|name|pinyin_prefix', 'like', "%$q%"];
+                return json(
+                    [
+                        'data' => [],
+                    ]
+                );
             }
         }
 
