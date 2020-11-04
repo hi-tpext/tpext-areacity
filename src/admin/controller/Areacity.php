@@ -68,7 +68,7 @@ class Areacity extends Controller
                 'town2' => 530102008,
             ]
         );
-        $form->fieldsEnd()
+        $form->fieldsEnd();
         //最后一个fields 可不要 fieldsEnd，自动生成[提交/重置]按钮时会自动调用fieldsEnd
 
         return $builder->render();
