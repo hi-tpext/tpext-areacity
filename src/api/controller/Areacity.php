@@ -27,7 +27,7 @@ class Areacity extends Controller
         $q = input('q');
 
         $where = [
-            ['deep', 'eq', 0],
+            ['deep', '=', 0],
         ];
 
         if ($q) {
@@ -55,17 +55,17 @@ class Areacity extends Controller
         $prev_val = input('prev_val/d');
 
         $where = [
-            ['deep', 'eq', 1],
+            ['deep', '=', 1],
         ];
 
         if ($prev_val) {
-            $where[] = ['pid', 'eq', $prev_val];
+            $where[] = ['pid', '=', $prev_val];
             if ($q) {
                 $where[] = ['ext_name|name|pinyin_prefix', 'like', "%$q%"];
             }
         } else {
             if (is_numeric($q)) {
-                $where = ['pid', 'eq', $q];
+                $where = ['pid', '=', $q];
             } else {
                 return json(
                     [
@@ -97,17 +97,17 @@ class Areacity extends Controller
         $prev_val = input('prev_val/d');
 
         $where = [
-            ['deep', 'eq', 2],
+            ['deep', '=', 2],
         ];
 
         if ($prev_val) {
-            $where[] = ['pid', 'eq', $prev_val];
+            $where[] = ['pid', '=', $prev_val];
             if ($q) {
                 $where[] = ['ext_name|name|pinyin_prefix', 'like', "%$q%"];
             }
         } else {
             if (is_numeric($q)) {
-                $where[] = ['pid', 'eq', $prev_val];
+                $where[] = ['pid', '=', $prev_val];
             } else {
                 return json(
                     [
@@ -139,17 +139,17 @@ class Areacity extends Controller
         $prev_val = input('prev_val/d');
 
         $where = [
-            ['deep', 'eq', 3],
+            ['deep', '=', 3],
         ];
 
         if ($prev_val) {
-            $where[] = ['pid', 'eq', $prev_val];
+            $where[] = ['pid', '=', $prev_val];
             if ($q) {
                 $where[] = ['ext_name|name|pinyin_prefix', 'like', "%$q%"];
             }
         } else {
             if (is_numeric($q)) {
-                $where = ['pid', 'eq', $prev_val];
+                $where = ['pid', '=', $prev_val];
             } else {
                 return json(
                     [
