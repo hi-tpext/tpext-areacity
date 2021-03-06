@@ -175,7 +175,7 @@ class Areacity extends Controller
         $pagesize = 30;
 
         if ($q) {
-            $data = $this->dataModel->where(['pinyin_prefix|ext_name|name' => ['like', "%$q%"], 'deep' => 1])->order('pinyin_prefix')->limit(($page - 1) * $pagesize, $pagesize)->select();
+            $data = $this->dataModel->where([['deep', '=', 1], ['pinyin_prefix|ext_name|name', 'like', "%$q%"]])->order('pinyin_prefix')->limit(($page - 1) * $pagesize, $pagesize)->select();
             return json(
                 [
                     'data' => $data,
