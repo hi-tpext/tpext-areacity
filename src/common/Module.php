@@ -17,7 +17,6 @@ class Module extends baseModule
     protected $root = __DIR__ . '/../../';
 
     protected $modules = [
-        'admin' => ['areacity'],
         'api' => ['areacity'],
     ];
 }
