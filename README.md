@@ -12,8 +12,6 @@ tpextbuilder1.0和3.0都支持
 
 ## DEMO
 
-<http://yourhost/admin/areacity/index>
-
 ```php
    $form->fields('省/市/区');
    $form->select('province', ' ', 4)->size(0, 12)->showLabel(false)->dataUrl(url('api/areacity/province'), 'ext_name')->withNext(
