@@ -1,4 +1,5 @@
 <?php
+
 namespace tpext\areacity\api\controller;
 
 use think\Controller;
@@ -15,8 +16,8 @@ class Areacity extends Controller
 
     public function province()
     {
-        $selected = input('selected');
-        if ($selected) {
+        $selected = input('selected', '');
+        if ($selected !== '') {
             return json(
                 [
                     'data' => $this->dataModel->where('id', 'in', $selected)->select(),
@@ -43,8 +44,8 @@ class Areacity extends Controller
 
     public function city()
     {
-        $selected = input('selected');
-        if ($selected) {
+        $selected = input('selected', '');
+        if ($selected !== '') {
             return json(
                 [
                     'data' => $this->dataModel->where('id', 'in', $selected)->select(),
@@ -84,8 +85,8 @@ class Areacity extends Controller
 
     public function area()
     {
-        $selected = input('selected');
-        if ($selected) {
+        $selected = input('selected', '');
+        if ($selected !== '') {
             return json(
                 [
                     'data' => $this->dataModel->where('id', 'in', $selected)->select(),
@@ -126,8 +127,8 @@ class Areacity extends Controller
 
     public function town()
     {
-        $selected = input('selected');
-        if ($selected) {
+        $selected = input('selected', '');
+        if ($selected !== '') {
             return json(
                 [
                     'data' => $this->dataModel->where('id', 'in', $selected)->select(),
