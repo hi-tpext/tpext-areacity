@@ -17,10 +17,10 @@
     },
     "autoload": {
         "psr-4": {
-            "tpext\\areacity\\": "src/"
+            "tpext\\areacity\\": "./"
         },
         "files": [
-            "src/helper.php"
+            "./helper.php"
         ]
     }
 }

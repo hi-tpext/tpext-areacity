@@ -2,9 +2,15 @@
 
 ## 安装
 
-tpextbuilder1.0和3.0都支持
+### 方式1 composer 安装
 
-`composer require ichynul/tpextareacity`
+```bash
+composer require ichynul/tpextareacity
+```
+
+### 方式2 extend 安装
+
+[tpext.core] 自`1.6.4|3.3.2|4.0.7`起，支持`extend`方式在线安装。
 
 - 数据源 <https://github.com/xiangyuecn/AreaCity-JsSpider-StatsGov>
 
