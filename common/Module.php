@@ -6,7 +6,7 @@ use tpext\common\Module as baseModule;
 
 class Module extends baseModule
 {
-    protected $version = '1.0.2';
+    protected $version = '1.0.3';
 
     protected $name = 'tpext.areacity';
 
