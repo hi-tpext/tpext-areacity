@@ -20,6 +20,7 @@ class Areacity extends Controller
         if ($selected !== '') {
             return json(
                 [
+                    'code' => 1,
                     'data' => $this->dataModel->where('id', 'in', $selected)->select(),
                 ]
             );
@@ -37,6 +38,7 @@ class Areacity extends Controller
 
         return json(
             [
+                'code' => 1,
                 'data' => $this->dataModel->where($where)->select(),
             ]
         );
@@ -48,6 +50,7 @@ class Areacity extends Controller
         if ($selected !== '') {
             return json(
                 [
+                    'code' => 1,
                     'data' => $this->dataModel->where('id', 'in', $selected)->select(),
                 ]
             );
@@ -70,6 +73,7 @@ class Areacity extends Controller
             } else {
                 return json(
                     [
+                        'code' => 1,
                         'data' => [],
                     ]
                 );
@@ -78,6 +82,7 @@ class Areacity extends Controller
 
         return json(
             [
+                'code' => 1,
                 'data' => $this->dataModel->where($where)->select(),
             ]
         );
@@ -89,6 +94,7 @@ class Areacity extends Controller
         if ($selected !== '') {
             return json(
                 [
+                    'code' => 1,
                     'data' => $this->dataModel->where('id', 'in', $selected)->select(),
                 ]
             );
@@ -112,6 +118,7 @@ class Areacity extends Controller
             } else {
                 return json(
                     [
+                        'code' => 1,
                         'data' => [],
                     ]
                 );
@@ -120,6 +127,7 @@ class Areacity extends Controller
 
         return json(
             [
+                'code' => 1,
                 'data' => $this->dataModel->where($where)->select(),
             ]
         );
@@ -131,6 +139,7 @@ class Areacity extends Controller
         if ($selected !== '') {
             return json(
                 [
+                    'code' => 1,
                     'data' => $this->dataModel->where('id', 'in', $selected)->select(),
                 ]
             );
@@ -154,6 +163,7 @@ class Areacity extends Controller
             } else {
                 return json(
                     [
+                        'code' => 1,
                         'data' => [],
                     ]
                 );
@@ -162,6 +172,7 @@ class Areacity extends Controller
 
         return json(
             [
+                'code' => 1,
                 'data' => $this->dataModel->where($where)->select(),
             ]
         );
@@ -179,6 +190,7 @@ class Areacity extends Controller
             $data = $this->dataModel->where([['deep', '=', 1], ['pinyin_prefix|ext_name|name', 'like', "%$q%"]])->order('pinyin_prefix')->limit(($page - 1) * $pagesize, $pagesize)->select();
             return json(
                 [
+                    'code' => 1,
                     'data' => $data,
                     'has_more' => count($data) == $pagesize,
                 ]
@@ -187,6 +199,7 @@ class Areacity extends Controller
         $data = $this->dataModel->where(['deep' => 1])->order('pinyin_prefix')->limit(($page - 1) * $pagesize, $pagesize)->select();
         return json(
             [
+                'code' => 1,
                 'data' => $data,
                 'has_more' => count($data) == $pagesize,
             ]
