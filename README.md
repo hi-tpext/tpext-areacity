@@ -12,9 +12,15 @@ composer require ichynul/tpextareacity
 
 [tpext.core] 自`1.6.4|3.3.2|4.0.7`起，支持`extend`方式在线安装。
 
-- 数据源 <https://github.com/xiangyuecn/AreaCity-JsSpider-StatsGov>
+- 数据源 <https://github.com/xiangyuecn/AreaCity-JsSpider-StatsGov> | <https://gitee.com/xiangyuecn/AreaCity-JsSpider-StatsGov>
 
-- 更新数据 <https://github.com/xiangyuecn/AreaCity-JsSpider-StatsGov/tree/master/src/%E9%87%87%E9%9B%86%E5%88%B0%E7%9A%84%E6%95%B0%E6%8D%AE/ok_data_level4.csv>
+- 本扩展不会经常更新数据，需要的请自行下载[ok_data_level4.csv]文件导入。
+
+- [phpmyadmin] 导入方法：选择 [tp_areacity] 表，点 [操作] 菜单，`将数据表复制到(数据库名.数据表名)`，填个新表名如`tp_areacity1` [执行] 备份。
+
+- [操作] 菜单-清空数据表 (TRUNCATE)，清空表数据。
+
+- [导入] 菜单上传下载的 [ok_data_level4.csv] ，点 [执行] ，导入后删除第一行表头字段。
 
 ## DEMO
 
