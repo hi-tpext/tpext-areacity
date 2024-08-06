@@ -842,7 +842,7 @@ INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, 
 (210113, 2101, 2, '沈北新区', 's', 'shen bei xin qu', 210113000000, '沈北新区'),
 (210114, 2101, 2, '于洪', 'y', 'yu hong', 210114000000, '于洪区'),
 (210115, 2101, 2, '辽中', 'l', 'liao zhong', 210115000000, '辽中区');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (210123, 2101, 2, '康平', 'k', 'kang ping', 210123000000, '康平县'),
 (210124, 2101, 2, '法库', 'f', 'fa ku', 210124000000, '法库县'),
 (210181, 2101, 2, '新民', 'x', 'xin min', 210181000000, '新民市'),
@@ -1657,7 +1657,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (370686, 3706, 2, '栖霞', 'q', 'qi xia', 370686000000, '栖霞市'),
 (370687, 3706, 2, '海阳', 'h', 'hai yang', 370687000000, '海阳市'),
 (370702, 3707, 2, '潍城', 'w', 'wei cheng', 370702000000, '潍城区');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (370703, 3707, 2, '寒亭', 'h', 'han ting', 370703000000, '寒亭区'),
 (370704, 3707, 2, '坊子', 'f', 'fang zi', 370704000000, '坊子区'),
 (370705, 3707, 2, '奎文', 'k', 'kui wen', 370705000000, '奎文区'),
@@ -2472,7 +2472,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (510722, 5107, 2, '三台', 's', 'san tai', 510722000000, '三台县'),
 (510723, 5107, 2, '盐亭', 'y', 'yan ting', 510723000000, '盐亭县'),
 (510725, 5107, 2, '梓潼', 'z', 'zi tong', 510725000000, '梓潼县');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (510726, 5107, 2, '北川', 'b', 'bei chuan', 510726000000, '北川羌族自治县'),
 (510727, 5107, 2, '平武', 'p', 'ping wu', 510727000000, '平武县'),
 (510781, 5107, 2, '江油', 'j', 'jiang you', 510781000000, '江油市'),
@@ -3282,7 +3282,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (710203, 7102, 2, '苓雅', 'l', 'ling ya', 710203000000, '苓雅区'),
 (710204, 7102, 2, '盐埕', 'y', 'yan cheng', 710204000000, '盐埕区'),
 (710205, 7102, 2, '鼓山', 'g', 'gu shan', 710205000000, '鼓山区');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (710206, 7102, 2, '旗津', 'q', 'qi jin', 710206000000, '旗津区'),
 (710207, 7102, 2, '前镇', 'q', 'qian zhen', 710207000000, '前镇区'),
 (710208, 7102, 2, '三民', 's', 'san min', 710208000000, '三民区'),
@@ -4041,7 +4041,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (120110009, 120110, 3, '金桥', 'j', 'jin qiao', 120110009000, '金桥街道'),
 (120110010, 120110, 3, '东丽湖', 'd', 'dong li hu', 120110010000, '东丽湖街道'),
 (120110400, 120110, 3, '天津开发区西区', 't', 'tian jin kai fa qu xi qu', 120110400000, '天津开发区西区');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (120110401, 120110, 3, '天津航空物流区', 't', 'tian jin hang kong wu liu qu', 120110401000, '天津航空物流区'),
 (120110402, 120110, 3, '天津空港经济区', 't', 'tian jin kong gang jing ji qu', 120110402000, '天津空港经济区'),
 (120110403, 120110, 3, '东丽区开发区', 'd', 'dong li qu kai fa qu', 120110403000, '东丽区开发区'),
@@ -4744,7 +4744,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (130283110, 130283, 3, '沙河驿', 's', 'sha he yi', 130283110000, '沙河驿镇'),
 (130283111, 130283, 3, '木厂口', 'm', 'mu chang kou', 130283111000, '木厂口镇'),
 (130283112, 130283, 3, '上射雁庄', 's', 'shang she yan zhuang', 130283112000, '上射雁庄镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (130283113, 130283, 3, '太平庄', 't', 'tai ping zhuang', 130283113000, '太平庄镇'),
 (130283114, 130283, 3, '扣庄', 'k', 'kou zhuang', 130283114000, '扣庄镇'),
 (130283115, 130283, 3, '大五里', 'd', 'da wu li', 130283115000, '大五里镇'),
@@ -5468,7 +5468,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (130630206, 130630, 3, '上庄', 's', 'shang zhuang', 130630206000, '上庄乡'),
 (130630207, 130630, 3, '东团堡', 'd', 'dong tuan bao', 130630207000, '东团堡乡'),
 (130630208, 130630, 3, '塔崖驿', 't', 'ta ya yi', 130630208000, '塔崖驿乡');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (130630209, 130630, 3, '乌龙沟', 'w', 'wu long gou', 130630209000, '乌龙沟乡'),
 (130631100, 130631, 3, '望都镇', 'w', 'wang dou zhen', 130631100000, '望都镇'),
 (130631101, 130631, 3, '固店', 'g', 'gu dian', 130631101000, '固店镇'),
@@ -6180,7 +6180,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (130926107, 130926, 3, '付家佐', 'f', 'fu jia zuo', 130926107000, '付家佐镇'),
 (130926205, 130926, 3, '邵庄', 's', 'shao zhuang', 130926205000, '邵庄乡'),
 (130927100, 130927, 3, '南皮镇', 'n', 'nan pi zhen', 130927100000, '南皮镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (130927101, 130927, 3, '冯家口', 'f', 'feng jia kou', 130927101000, '冯家口镇'),
 (130927102, 130927, 3, '寨子', 'z', 'zhai zi', 130927102000, '寨子镇'),
 (130927103, 130927, 3, '鲍官屯', 'b', 'bao guan tun', 130927103000, '鲍官屯镇'),
@@ -6902,7 +6902,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (140521202, 140521, 3, '张村', 'z', 'zhang cun', 140521202000, '张村乡'),
 (140521204, 140521, 3, '胡底', 'h', 'hu di', 140521204000, '胡底乡'),
 (140521205, 140521, 3, '固县', 'g', 'gu xian', 140521205000, '固县乡');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (140521206, 140521, 3, '十里', 's', 'shi li', 140521206000, '十里乡'),
 (140522100, 140522, 3, '凤城', 'f', 'feng cheng', 140522100000, '凤城镇'),
 (140522101, 140522, 3, '北留', 'b', 'bei liu', 140522101000, '北留镇'),
@@ -7646,7 +7646,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (141122104, 141122, 3, '西社', 'x', 'xi she', 141122104000, '西社镇'),
 (141122105, 141122, 3, '庞泉沟', 'p', 'pang quan gou', 141122105000, '庞泉沟镇'),
 (141122107, 141122, 3, '洪相', 'h', 'hong xiang', 141122107000, '洪相镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (141122202, 141122, 3, '东坡底', 'd', 'dong po di', 141122202000, '东坡底乡'),
 (141123100, 141123, 3, '蔚汾', 'w', 'wei fen', 141123100000, '蔚汾镇'),
 (141123101, 141123, 3, '魏家滩', 'w', 'wei jia tan', 141123101000, '魏家滩镇'),
@@ -8335,7 +8335,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (150627110, 150627, 3, '乌兰木伦', 'w', 'wu lan mu lun', 150627110000, '乌兰木伦镇'),
 (150627111, 150627, 3, '纳林陶亥', 'n', 'na lin tao hai', 150627111000, '纳林陶亥镇'),
 (150627113, 150627, 3, '苏布尔嘎', 's', 'su bu er ga', 150627113000, '苏布尔嘎镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (150702001, 150702, 3, '正阳', 'z', 'zheng yang', 150702001000, '正阳街道'),
 (150702003, 150702, 3, '靠山', 'k', 'kao shan', 150702003000, '靠山街道'),
 (150702004, 150702, 3, '健康', 'j', 'jian kang', 150702004000, '健康街道'),
@@ -8999,7 +8999,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (210114011, 210114, 3, '北陵', 'b', 'bei ling', 210114011000, '北陵街道'),
 (210114013, 210114, 3, '南阳湖', 'n', 'nan yang hu', 210114013000, '南阳湖街道'),
 (210114014, 210114, 3, '光辉', 'g', 'guang hui', 210114014000, '光辉街道');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (210115001, 210115, 3, '蒲西', 'p', 'pu xi', 210115001000, '蒲西街道'),
 (210115002, 210115, 3, '蒲东', 'p', 'pu dong', 210115002000, '蒲东街道'),
 (210115003, 210115, 3, '茨榆坨', 'c', 'ci yu tuo', 210115003000, '茨榆坨街道'),
@@ -9724,7 +9724,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (210921107, 210921, 3, '建设', 'j', 'jian she', 210921107000, '建设镇'),
 (210921108, 210921, 3, '大巴', 'd', 'da ba', 210921108000, '大巴镇'),
 (210921109, 210921, 3, '泡子', 'p', 'pao zi', 210921109000, '泡子镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (210921110, 210921, 3, '十家子', 's', 'shi jia zi', 210921110000, '十家子镇'),
 (210921111, 210921, 3, '王府', 'w', 'wang fu', 210921111000, '王府镇'),
 (210921112, 210921, 3, '于寺', 'y', 'yu si', 210921112000, '于寺镇'),
@@ -10443,7 +10443,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (220184112, 220184, 3, '毛城子', 'm', 'mao cheng zi', 220184112000, '毛城子镇'),
 (220184113, 220184, 3, '玻璃城子', 'b', 'bo li cheng zi', 220184113000, '玻璃城子镇'),
 (220184114, 220184, 3, '朝阳坡', 'z', 'zhao yang po', 220184114000, '朝阳坡镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (220184115, 220184, 3, '大榆树', 'd', 'da yu shu', 220184115000, '大榆树镇'),
 (220184116, 220184, 3, '秦家屯', 'q', 'qin jia tun', 220184116000, '秦家屯镇'),
 (220184117, 220184, 3, '八屋', 'b', 'ba wu', 220184117000, '八屋镇'),
@@ -11166,7 +11166,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (222424105, 222424, 3, '春阳', 'c', 'chun yang', 222424105000, '春阳镇'),
 (222424106, 222424, 3, '复兴', 'f', 'fu xing', 222424106000, '复兴镇'),
 (222424107, 222424, 3, '东光', 'd', 'dong guang', 222424107000, '东光镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (222424109, 222424, 3, '汪清镇', 'w', 'wang qing zhen', 222424109000, '汪清镇'),
 (222424202, 222424, 3, '鸡冠', 'j', 'ji guan', 222424202000, '鸡冠乡'),
 (222426100, 222426, 3, '明月', 'm', 'ming yue', 222426100000, '明月镇'),
@@ -11885,7 +11885,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (230523103, 230523, 3, '夹信子', 'j', 'jia xin zi', 230523103000, '夹信子镇'),
 (230523104, 230523, 3, '龙头', 'l', 'long tou', 230523104000, '龙头镇'),
 (230523105, 230523, 3, '小城子', 'x', 'xiao cheng zi', 230523105000, '小城子镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (230523106, 230523, 3, '朝阳', 'z', 'zhao yang', 230523106000, '朝阳镇'),
 (230523203, 230523, 3, '万金山', 'w', 'wan jin shan', 230523203000, '万金山乡'),
 (230523204, 230523, 3, '尖山子', 'j', 'jian shan zi', 230523204000, '尖山子乡'),
@@ -12580,7 +12580,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (231224103, 231224, 3, '平安', 'p', 'ping an', 231224103000, '平安镇'),
 (231224104, 231224, 3, '勤劳', 'q', 'qin lao', 231224104000, '勤劳镇'),
 (231224105, 231224, 3, '久胜', 'j', 'jiu sheng', 231224105000, '久胜镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (231224106, 231224, 3, '庆安镇', 'q', 'qing an zhen', 231224106000, '庆安镇'),
 (231224107, 231224, 3, '同乐', 't', 'tong le', 231224107000, '同乐镇'),
 (231224108, 231224, 3, '柳河', 'l', 'liu he', 231224108000, '柳河镇'),
@@ -13310,7 +13310,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (320411101, 320411, 3, '春江', 'c', 'chun jiang', 320411101000, '春江镇'),
 (320411102, 320411, 3, '孟河', 'm', 'meng he', 320411102000, '孟河镇'),
 (320411104, 320411, 3, '薛家', 'x', 'xue jia', 320411104000, '薛家镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (320411106, 320411, 3, '西夏墅', 'x', 'xi xia shu', 320411106000, '西夏墅镇'),
 (320411107, 320411, 3, '奔牛', 'b', 'ben niu', 320411107000, '奔牛镇'),
 (320412001, 320412, 3, '南夏墅', 'n', 'nan xia shu', 320412001000, '南夏墅街道'),
@@ -14050,7 +14050,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (321281105, 321281, 3, '海南', 'h', 'hai nan', 321281105000, '海南镇'),
 (321281106, 321281, 3, '钓鱼', 'd', 'diao yu', 321281106000, '钓鱼镇'),
 (321281107, 321281, 3, '大邹', 'd', 'da zou', 321281107000, '大邹镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (321281108, 321281, 3, '沙沟', 's', 'sha gou', 321281108000, '沙沟镇'),
 (321281109, 321281, 3, '中堡', 'z', 'zhong bao', 321281109000, '中堡镇'),
 (321281114, 321281, 3, '竹泓', 'z', 'zhu hong', 321281114000, '竹泓镇'),
@@ -14798,7 +14798,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (330482103, 330482, 3, '新仓', 'x', 'xin cang', 330482103000, '新仓镇'),
 (330482106, 330482, 3, '广陈', 'g', 'guang chen', 330482106000, '广陈镇'),
 (330482107, 330482, 3, '林埭', 'l', 'lin dai', 330482107000, '林埭镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (330482108, 330482, 3, '独山港', 'd', 'du shan gang', 330482108000, '独山港镇'),
 (330483001, 330483, 3, '梧桐', 'w', 'wu tong', 330483001000, '梧桐街道'),
 (330483003, 330483, 3, '凤鸣', 'f', 'feng ming', 330483003000, '凤鸣街道'),
@@ -15550,7 +15550,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (331127208, 331127, 3, '大漈', 'd', 'da ji', 331127208000, '大漈乡'),
 (331127209, 331127, 3, '景南', 'j', 'jing nan', 331127209000, '景南乡'),
 (331127210, 331127, 3, '雁溪', 'y', 'yan xi', 331127210000, '雁溪乡');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (331127212, 331127, 3, '鸬鹚', 'l', 'lu ci', 331127212000, '鸬鹚乡'),
 (331127213, 331127, 3, '梧桐', 'w', 'wu tong', 331127213000, '梧桐乡'),
 (331127214, 331127, 3, '标溪', 'b', 'biao xi', 331127214000, '标溪乡'),
@@ -16281,7 +16281,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (341021113, 341021, 3, '雄村', 'x', 'xiong cun', 341021113000, '雄村镇'),
 (341021114, 341021, 3, '三阳', 's', 'san yang', 341021114000, '三阳镇'),
 (341021201, 341021, 3, '坑口', 'k', 'keng kou', 341021201000, '坑口乡');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (341021203, 341021, 3, '上丰', 's', 'shang feng', 341021203000, '上丰乡'),
 (341021207, 341021, 3, '昌溪', 'c', 'chang xi', 341021207000, '昌溪乡'),
 (341021209, 341021, 3, '武阳', 'w', 'wu yang', 341021209000, '武阳乡'),
@@ -17022,7 +17022,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (341723101, 341723, 3, '木镇', 'm', 'mu zhen', 341723101000, '木镇镇'),
 (341723102, 341723, 3, '庙前', 'm', 'miao qian', 341723102000, '庙前镇'),
 (341723104, 341723, 3, '新河', 'x', 'xin he', 341723104000, '新河镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (341723105, 341723, 3, '丁桥', 'd', 'ding qiao', 341723105000, '丁桥镇'),
 (341723107, 341723, 3, '朱备', 'z', 'zhu bei', 341723107000, '朱备镇'),
 (341723109, 341723, 3, '杨田', 'y', 'yang tian', 341723109000, '杨田镇'),
@@ -17773,7 +17773,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (350623102, 350623, 3, '佛昙', 'f', 'fo tan', 350623102000, '佛昙镇'),
 (350623103, 350623, 3, '赤湖', 'c', 'chi hu', 350623103000, '赤湖镇'),
 (350623104, 350623, 3, '杜浔', 'd', 'du xun', 350623104000, '杜浔镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (350623105, 350623, 3, '霞美', 'x', 'xia mei', 350623105000, '霞美镇'),
 (350623106, 350623, 3, '官浔', 'g', 'guan xun', 350623106000, '官浔镇'),
 (350623107, 350623, 3, '石榴', 's', 'shi liu', 350623107000, '石榴镇'),
@@ -18522,7 +18522,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (360423214, 360423, 3, '杨洲', 'y', 'yang zhou', 360423214000, '杨洲乡'),
 (360424100, 360424, 3, '义宁', 'y', 'yi ning', 360424100000, '义宁镇'),
 (360424101, 360424, 3, '太阳升', 't', 'tai yang sheng', 360424101000, '太阳升镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (360424102, 360424, 3, '全丰', 'q', 'quan feng', 360424102000, '全丰镇'),
 (360424103, 360424, 3, '白岭', 'b', 'bai ling', 360424103000, '白岭镇'),
 (360424104, 360424, 3, '古市', 'g', 'gu shi', 360424104000, '古市镇'),
@@ -19272,7 +19272,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (360902006, 360902, 3, '化成', 'h', 'hua cheng', 360902006000, '化成街道'),
 (360902007, 360902, 3, '凤凰', 'f', 'feng huang', 360902007000, '凤凰街道'),
 (360902008, 360902, 3, '官园', 'g', 'guan yuan', 360902008000, '官园街道');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (360902009, 360902, 3, '下浦', 'x', 'xia pu', 360902009000, '下浦街道'),
 (360902100, 360902, 3, '彬江', 'b', 'bin jiang', 360902100000, '彬江镇'),
 (360902101, 360902, 3, '西村', 'x', 'xi cun', 360902101000, '西村镇'),
@@ -20011,7 +20011,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (370203039, 370203, 3, '海伦路', 'h', 'hai lun lu', 370203039000, '海伦路街道'),
 (370203040, 370203, 3, '双山', 's', 'shuang shan', 370203040000, '双山街道'),
 (370211001, 370211, 3, '黄岛街道', 'h', 'huang dao jie dao', 370211001000, '黄岛街道');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (370211002, 370211, 3, '辛安', 'x', 'xin an', 370211002000, '辛安街道'),
 (370211003, 370211, 3, '薛家岛', 'x', 'xue jia dao', 370211003000, '薛家岛街道'),
 (370211004, 370211, 3, '长江路', 'c', 'chang jiang lu', 370211004000, '长江路街道'),
@@ -20749,7 +20749,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (370911102, 370911, 3, '范镇', 'f', 'fan zhen', 370911102000, '范镇'),
 (370911103, 370911, 3, '角峪', 'j', 'jiao yu', 370911103000, '角峪镇'),
 (370911104, 370911, 3, '徂徕', 'c', 'cu lai', 370911104000, '徂徕镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (370911105, 370911, 3, '满庄', 'm', 'man zhuang', 370911105000, '满庄镇'),
 (370911106, 370911, 3, '夏张', 'x', 'xia zhang', 370911106000, '夏张镇'),
 (370911107, 370911, 3, '道朗', 'd', 'dao lang', 370911107000, '道朗镇'),
@@ -21491,7 +21491,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (371703101, 371703, 3, '陈集', 'c', 'chen ji', 371703101000, '陈集镇'),
 (371703102, 371703, 3, '冉堌', 'r', 'ran gu', 371703102000, '冉堌镇'),
 (371703103, 371703, 3, '张湾', 'z', 'zhang wan', 371703103000, '张湾镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (371703104, 371703, 3, '黄店', 'h', 'huang dian', 371703104000, '黄店镇'),
 (371703105, 371703, 3, '孟海', 'm', 'meng hai', 371703105000, '孟海镇'),
 (371703106, 371703, 3, '马集', 'm', 'ma ji', 371703106000, '马集镇'),
@@ -22221,7 +22221,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (410425203, 410425, 3, '白庙', 'b', 'bai miao', 410425203000, '白庙乡'),
 (410425204, 410425, 3, '广阔天地', 'g', 'guang kuo tian di', 410425204000, '广阔天地乡'),
 (410425205, 410425, 3, '渣园', 'z', 'zha yuan', 410425205000, '渣园乡');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (410481001, 410481, 3, '垭口', 'y', 'ya kou', 410481001000, '垭口街道'),
 (410481002, 410481, 3, '寺坡', 's', 'si po', 410481002000, '寺坡街道'),
 (410481003, 410481, 3, '朱兰', 'z', 'zhu lan', 410481003000, '朱兰街道'),
@@ -22956,7 +22956,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (411221102, 411221, 3, '张村', 'z', 'zhang cun', 411221102000, '张村镇'),
 (411221103, 411221, 3, '洪阳', 'h', 'hong yang', 411221103000, '洪阳镇'),
 (411221104, 411221, 3, '天池', 't', 'tian chi', 411221104000, '天池镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (411221105, 411221, 3, '仰韶', 'y', 'yang shao', 411221105000, '仰韶镇'),
 (411221203, 411221, 3, '仁村', 'r', 'ren cun', 411221203000, '仁村乡'),
 (411221206, 411221, 3, '果园', 'g', 'guo yuan', 411221206000, '果园乡'),
@@ -23698,7 +23698,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (411621205, 411621, 3, '城郊', 'c', 'cheng jiao', 411621205000, '城郊乡'),
 (411622001, 411622, 3, '娲城', 'w', 'wa cheng', 411622001000, '娲城街道'),
 (411622002, 411622, 3, '箕子台', 'j', 'ji zi tai', 411622002000, '箕子台街道');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (411622003, 411622, 3, '昆山', 'k', 'kun shan', 411622003000, '昆山街道'),
 (411622004, 411622, 3, '皮营', 'p', 'pi ying', 411622004000, '皮营街道'),
 (411622101, 411622, 3, '西夏亭', 'x', 'xi xia ting', 411622101000, '西夏亭镇'),
@@ -24418,7 +24418,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (420381403, 420381, 3, '大沟林业开发管理区', 'd', 'da gou lin ye kai fa guan li qu', 420381403000, '大沟林业开发管理区'),
 (420502001, 420502, 3, '西陵街道', 'x', 'xi ling jie dao', 420502001000, '西陵街道'),
 (420502002, 420502, 3, '学院', 'x', 'xue yuan', 420502002000, '学院街道');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (420502003, 420502, 3, '云集', 'y', 'yun ji', 420502003000, '云集街道'),
 (420502004, 420502, 3, '窑湾', 'y', 'yao wan', 420502004000, '窑湾街道'),
 (420502005, 420502, 3, '西坝', 'x', 'xi ba', 420502005000, '西坝街道'),
@@ -25140,7 +25140,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (421221101, 421221, 3, '高铁岭', 'g', 'gao tie ling', 421221101000, '高铁岭镇'),
 (421221102, 421221, 3, '官桥', 'g', 'guan qiao', 421221102000, '官桥镇'),
 (421221103, 421221, 3, '鱼岳', 'y', 'yu yue', 421221103000, '鱼岳镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (421221104, 421221, 3, '新街', 'x', 'xin jie', 421221104000, '新街镇'),
 (421221105, 421221, 3, '渡普', 'd', 'du pu', 421221105000, '渡普镇'),
 (421221106, 421221, 3, '潘家湾', 'p', 'pan jia wan', 421221106000, '潘家湾镇'),
@@ -25868,7 +25868,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (430424117, 430424, 3, '三樟', 's', 'san zhang', 430424117000, '三樟镇'),
 (430424204, 430424, 3, '南湾', 'n', 'nan wan', 430424204000, '南湾乡'),
 (430424211, 430424, 3, '石滩', 's', 'shi tan', 430424211000, '石滩乡');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (430426001, 430426, 3, '洪桥', 'h', 'hong qiao', 430426001000, '洪桥街道'),
 (430426002, 430426, 3, '玉和', 'y', 'yu he', 430426002000, '玉和街道'),
 (430426003, 430426, 3, '永昌', 'y', 'yong chang', 430426003000, '永昌街道'),
@@ -26594,7 +26594,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (430923115, 430923, 3, '柘溪', 'z', 'zhe xi', 430923115000, '柘溪镇'),
 (430923116, 430923, 3, '乐安', 'l', 'le an', 430923116000, '乐安镇'),
 (430923117, 430923, 3, '滔溪', 't', 'tao xi', 430923117000, '滔溪镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (430923200, 430923, 3, '高明', 'g', 'gao ming', 430923200000, '高明乡'),
 (430923206, 430923, 3, '龙塘', 'l', 'long tang', 430923206000, '龙塘乡'),
 (430923209, 430923, 3, '田庄', 't', 'tian zhuang', 430923209000, '田庄乡'),
@@ -27328,7 +27328,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (433127113, 433127, 3, '小溪', 'x', 'xiao xi', 433127113000, '小溪镇'),
 (433127114, 433127, 3, '芙蓉', 'f', 'fu rong', 433127114000, '芙蓉镇'),
 (433127200, 433127, 3, '两岔', 'l', 'liang cha', 433127200000, '两岔乡');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (433127202, 433127, 3, '西歧', 'x', 'xi qi', 433127202000, '西歧乡'),
 (433127203, 433127, 3, '对山', 'd', 'dui shan', 433127203000, '对山乡'),
 (433127210, 433127, 3, '高坪', 'g', 'gao ping', 433127210000, '高坪乡'),
@@ -28075,7 +28075,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (440904120, 440904, 3, '七迳', 'q', 'qi jing', 440904120000, '七迳镇'),
 (440904122, 440904, 3, '陈村', 'c', 'chen cun', 440904122000, '陈村镇'),
 (440981002, 440981, 3, '石仔岭', 's', 'shi zi ling', 440981002000, '石仔岭街道');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (440981003, 440981, 3, '山美', 's', 'shan mei', 440981003000, '山美街道'),
 (440981006, 440981, 3, '金山', 'j', 'jin shan', 440981006000, '金山街道'),
 (440981007, 440981, 3, '宝光', 'b', 'bao guang', 440981007000, '宝光街道'),
@@ -28827,7 +28827,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (445122123, 445122, 3, '汫洲', 'j', 'jing zhou', 445122123000, '汫洲镇'),
 (445122124, 445122, 3, '海山', 'h', 'hai shan', 445122124000, '海山镇'),
 (445202001, 445202, 3, '榕华', 'r', 'rong hua', 445202001000, '榕华街道');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (445202002, 445202, 3, '新兴', 'x', 'xin xing', 445202002000, '新兴街道'),
 (445202003, 445202, 3, '中山', 'z', 'zhong shan', 445202003000, '中山街道'),
 (445202004, 445202, 3, '西马', 'x', 'xi ma', 445202004000, '西马街道'),
@@ -29573,7 +29573,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (450802201, 450802, 3, '中里', 'z', 'zhong li', 450802201000, '中里乡'),
 (450803001, 450803, 3, '江南', 'j', 'jiang nan', 450803001000, '江南街道'),
 (450803100, 450803, 3, '桥圩', 'q', 'qiao xu', 450803100000, '桥圩镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (450803101, 450803, 3, '木格', 'm', 'mu ge', 450803101000, '木格镇'),
 (450803102, 450803, 3, '木梓', 'm', 'mu zi', 450803102000, '木梓镇'),
 (450803103, 450803, 3, '湛江', 'z', 'zhan jiang', 450803103000, '湛江镇'),
@@ -30324,7 +30324,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (469002104, 469002000, 3, '博鳌', 'b', 'bo ao', 469002104000, '博鳌镇'),
 (469002105, 469002000, 3, '阳江', 'y', 'yang jiang', 469002105000, '阳江镇'),
 (469002106, 469002000, 3, '龙江', 'l', 'long jiang', 469002106000, '龙江镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (469002107, 469002000, 3, '潭门', 't', 'tan men', 469002107000, '潭门镇'),
 (469002108, 469002000, 3, '塔洋', 't', 'ta yang', 469002108000, '塔洋镇'),
 (469002109, 469002000, 3, '长坡', 'c', 'chang po', 469002109000, '长坡镇'),
@@ -31063,7 +31063,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (500154124, 500154, 3, '巫山', 'w', 'wu shan', 500154124000, '巫山镇'),
 (500154125, 500154, 3, '谭家', 't', 'tan jia', 500154125000, '谭家镇'),
 (500154126, 500154, 3, '满月', 'm', 'man yue', 500154126000, '满月镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (500154127, 500154, 3, '雪宝山', 'x', 'xue bao shan', 500154127000, '雪宝山镇'),
 (500154200, 500154, 3, '三汇口', 's', 'san hui kou', 500154200000, '三汇口乡'),
 (500154201, 500154, 3, '五通', 'w', 'wu tong', 500154201000, '五通乡'),
@@ -31812,7 +31812,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (510311107, 510311, 3, '联络', 'l', 'lian luo', 510311107000, '联络镇'),
 (510311109, 510311, 3, '王井', 'w', 'wang jing', 510311109000, '王井镇'),
 (510311110, 510311, 3, '黄市', 'h', 'huang shi', 510311110000, '黄市镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (510311111, 510311, 3, '瓦市', 'w', 'wa shi', 510311111000, '瓦市镇'),
 (510311112, 510311, 3, '仙市', 'x', 'xian shi', 510311112000, '仙市镇'),
 (510311204, 510311, 3, '九洪', 'j', 'jiu hong', 510311204000, '九洪乡'),
@@ -32566,7 +32566,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (511024115, 511024, 3, '连界', 'l', 'lian jie', 511024115000, '连界镇'),
 (511024116, 511024, 3, '越溪', 'y', 'yue xi', 511024116000, '越溪镇'),
 (511024119, 511024, 3, '小河', 'x', 'xiao he', 511024119000, '小河镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (511025100, 511025, 3, '重龙', 'z', 'zhong long', 511025100000, '重龙镇'),
 (511025102, 511025, 3, '归德', 'g', 'gui de', 511025102000, '归德镇'),
 (511025103, 511025, 3, '鱼溪', 'y', 'yu xi', 511025103000, '鱼溪镇'),
@@ -33323,7 +33323,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (511702103, 511702, 3, '蒲家', 'p', 'pu jia', 511702103000, '蒲家镇'),
 (511702104, 511702, 3, '复兴', 'f', 'fu xing', 511702104000, '复兴镇'),
 (511702105, 511702, 3, '双龙', 's', 'shuang long', 511702105000, '双龙镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (511702107, 511702, 3, '江陵', 'j', 'jiang ling', 511702107000, '江陵镇'),
 (511702108, 511702, 3, '碑庙', 'b', 'bei miao', 511702108000, '碑庙镇'),
 (511702109, 511702, 3, '磐石', 'p', 'pan shi', 511702109000, '磐石镇'),
@@ -34077,7 +34077,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (513325203, 513325, 3, '祝桑', 'z', 'zhu sang', 513325203000, '祝桑乡'),
 (513325204, 513325, 3, '米龙', 'm', 'mi long', 513325204000, '米龙乡'),
 (513325205, 513325, 3, '八衣绒', 'b', 'ba yi rong', 513325205000, '八衣绒乡');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (513325206, 513325, 3, '波斯河', 'b', 'bo si he', 513325206000, '波斯河镇'),
 (513325208, 513325, 3, '牙衣河', 'y', 'ya yi he', 513325208000, '牙衣河乡'),
 (513325210, 513325, 3, '麻郎措', 'm', 'ma lang cuo', 513325210000, '麻郎措镇'),
@@ -34826,7 +34826,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (520281118, 520281, 3, '民主', 'm', 'min zhu', 520281118000, '民主镇'),
 (520281121, 520281, 3, '新民', 'x', 'xin min', 520281121000, '新民镇'),
 (520281123, 520281, 3, '柏果', 'b', 'bai guo', 520281123000, '柏果镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (520281124, 520281, 3, '盘关', 'p', 'pan guan', 520281124000, '盘关镇'),
 (520281125, 520281, 3, '石桥', 's', 'shi qiao', 520281125000, '石桥镇'),
 (520281126, 520281, 3, '竹海', 'z', 'zhu hai', 520281126000, '竹海镇'),
@@ -35568,7 +35568,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (520625106, 520625, 3, '朗溪', 'l', 'lang xi', 520625106000, '朗溪镇'),
 (520625107, 520625, 3, '缠溪', 'c', 'chan xi', 520625107000, '缠溪镇'),
 (520625108, 520625, 3, '洋溪', 'y', 'yang xi', 520625108000, '洋溪镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (520625109, 520625, 3, '新寨', 'x', 'xin zhai', 520625109000, '新寨镇'),
 (520625110, 520625, 3, '杉树', 's', 'shan shu', 520625110000, '杉树镇'),
 (520625111, 520625, 3, '紫薇', 'z', 'zi wei', 520625111000, '紫薇镇'),
@@ -36315,7 +36315,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (530326102, 530326, 3, '迤车', 'y', 'yi che', 530326102000, '迤车镇'),
 (530326104, 530326, 3, '矿山', 'k', 'kuang shan', 530326104000, '矿山镇'),
 (530326105, 530326, 3, '者海', 'z', 'zhe hai', 530326105000, '者海镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (530326106, 530326, 3, '待补', 'd', 'dai bu', 530326106000, '待补镇'),
 (530326107, 530326, 3, '乐业', 'l', 'le ye', 530326107000, '乐业镇'),
 (530326108, 530326, 3, '大井', 'd', 'da jing', 530326108000, '大井镇'),
@@ -37065,7 +37065,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (532527201, 532527, 3, '向阳', 'x', 'xiang yang', 532527201000, '向阳乡'),
 (532527202, 532527, 3, '三塘', 's', 'san tang', 532527202000, '三塘乡'),
 (532527203, 532527, 3, '永宁', 'y', 'yong ning', 532527203000, '永宁乡');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (532528100, 532528, 3, '南沙', 'n', 'nan sha', 532528100000, '南沙镇'),
 (532528101, 532528, 3, '新街', 'x', 'xin jie', 532528101000, '新街镇'),
 (532528102, 532528, 3, '牛角寨', 'n', 'niu jiao zhai', 532528102000, '牛角寨镇'),
@@ -37816,7 +37816,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (540325203, 540325, 3, '巴日', 'b', 'ba ri', 540325203000, '巴日乡'),
 (540325204, 540325, 3, '阿孜', 'a', 'a zi', 540325204000, '阿孜乡'),
 (540325205, 540325, 3, '王卡', 'w', 'wang ka', 540325205000, '王卡乡');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (540325206, 540325, 3, '新卡', 'x', 'xin ka', 540325206000, '新卡乡'),
 (540325207, 540325, 3, '肯通', 'k', 'ken tong', 540325207000, '肯通乡'),
 (540325208, 540325, 3, '扩达', 'k', 'kuo da', 540325208000, '扩达乡'),
@@ -38563,7 +38563,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (610425111, 610425, 3, '骏马', 'j', 'jun ma', 610425111000, '骏马镇'),
 (610426001, 610426, 3, '监军', 'j', 'jian jun', 610426001000, '监军街道'),
 (610426101, 610426, 3, '店头', 'd', 'dian tou', 610426101000, '店头镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (610426102, 610426, 3, '常宁', 'c', 'chang ning', 610426102000, '常宁镇'),
 (610426104, 610426, 3, '甘井', 'g', 'gan jing', 610426104000, '甘井镇'),
 (610426105, 610426, 3, '马坊', 'm', 'ma fang', 610426105000, '马坊镇'),
@@ -39299,7 +39299,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (610924114, 610924, 3, '麻柳', 'm', 'ma liu', 610924114000, '麻柳镇'),
 (610924115, 610924, 3, '双安', 's', 'shuang an', 610924115000, '双安镇'),
 (610924116, 610924, 3, '东木', 'd', 'dong mu', 610924116000, '东木镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (610924122, 610924, 3, '界岭', 'j', 'jie ling', 610924122000, '界岭镇'),
 (610925100, 610925, 3, '城关', 'c', 'cheng guan', 610925100000, '城关镇'),
 (610925101, 610925, 3, '佐龙', 'z', 'zuo long', 610925101000, '佐龙镇'),
@@ -40034,7 +40034,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (620825104, 620825, 3, '韩店', 'h', 'han dian', 620825104000, '韩店镇'),
 (620825105, 620825, 3, '卧龙', 'w', 'wo long', 620825105000, '卧龙镇'),
 (620825106, 620825, 3, '阳川', 'y', 'yang chuan', 620825106000, '阳川镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (620825107, 620825, 3, '盘安', 'p', 'pan an', 620825107000, '盘安镇'),
 (620825108, 620825, 3, '通化', 't', 'tong hua', 620825108000, '通化镇'),
 (620825109, 620825, 3, '大庄', 'd', 'da zhuang', 620825109000, '大庄镇'),
@@ -40778,7 +40778,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (623023107, 623023, 3, '巴藏', 'b', 'ba cang', 623023107000, '巴藏镇'),
 (623023108, 623023, 3, '憨班', 'h', 'han ban', 623023108000, '憨班镇'),
 (623023109, 623023, 3, '坪定', 'p', 'ping ding', 623023109000, '坪定镇');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (623023110, 623023, 3, '果耶', 'g', 'guo ye', 623023110000, '果耶镇'),
 (623023111, 623023, 3, '武坪', 'w', 'wu ping', 623023111000, '武坪镇'),
 (623023112, 623023, 3, '大峪', 'd', 'da yu', 623023112000, '大峪镇'),
@@ -41507,7 +41507,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (650103002, 650103, 3, '和田街', 'h', 'he tian jie', 650103002000, '和田街街道'),
 (650103003, 650103, 3, '扬子江路', 'y', 'yang zi jiang lu', 650103003000, '扬子江路街道'),
 (650103004, 650103, 3, '友好南路', 'y', 'you hao nan lu', 650103004000, '友好南路街道');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (650103005, 650103, 3, '友好北路', 'y', 'you hao bei lu', 650103005000, '友好北路街道'),
 (650103006, 650103, 3, '八一', 'b', 'ba yi', 650103006000, '八一街道'),
 (650103007, 650103, 3, '炉院街', 'l', 'lu yuan jie', 650103007000, '炉院街街道'),
@@ -42172,7 +42172,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (653124205, 653124, 3, '图呼其', 't', 'tu hu qi', 653124205000, '图呼其乡'),
 (653124206, 653124, 3, '奎依巴格', 'k', 'kui yi ba ge', 653124206000, '奎依巴格乡'),
 (653124207, 653124, 3, '阿克塔木', 'a', 'a ke ta mu', 653124207000, '阿克塔木乡');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (653124208, 653124, 3, '阿依库勒', 'a', 'a yi ku le', 653124208000, '阿依库勒乡'),
 (653124209, 653124, 3, '布依鲁克', 'b', 'bu yi lu ke', 653124209000, '布依鲁克塔吉克族乡'),
 (653124400, 653124, 3, '农场场部', 'n', 'nong chang chang bu', 653124400000, '农场场部'),
@@ -42822,7 +42822,7 @@ INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin
 (710207000, 710207, 3, '前镇区', 'q', 'qian zhen qu', 710207000000, '前镇区'),
 (710208000, 710208, 3, '三民区', 's', 'san min qu', 710208000000, '三民区'),
 (710209000, 710209, 3, '左营区', 'z', 'zuo ying qu', 710209000000, '左营区');
-INSERT INTO `tp_areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
+INSERT INTO `__PREFIX__areacity` (`id`, `pid`, `deep`, `name`, `pinyin_prefix`, `pinyin`, `ext_id`, `ext_name`) VALUES
 (710210000, 710210, 3, '楠梓区', 'n', 'nan zi qu', 710210000000, '楠梓区'),
 (710211000, 710211, 3, '小港区', 'x', 'xiao gang qu', 710211000000, '小港区'),
 (710242000, 710242, 3, '仁武区', 'r', 'ren wu qu', 710242000000, '仁武区'),
