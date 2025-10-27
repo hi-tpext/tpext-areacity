@@ -26,19 +26,39 @@ composer require ichynul/tpextareacity
 
 ```php
    $form->fields('省/市/区');
-   $form->select('province', ' ', 4)->size(0, 12)->showLabel(false)->dataUrl(url('api/areacity/province'), 'ext_name')->withNext(
-            $form->select('city', ' ', 4)->size(0, 12)->showLabel(false)->dataUrl(url('api/areacity/city'), 'ext_name')->withNext(
-                $form->select('area', ' ', 4)->size(0, 12)->showLabel(false)->dataUrl(url('api/areacity/area'), 'ext_name')
+   $form->select('province', ' ', 4)->size(0, 12)->showLabel(false)->dataUrl(url('/api/areacity/province'), 'ext_name')->withNext(
+            $form->select('city', ' ', 4)->size(0, 12)->showLabel(false)->dataUrl(url('/api/areacity/city'), 'ext_name')->withNext(
+                $form->select('area', ' ', 4)->size(0, 12)->showLabel(false)->dataUrl(url('/api/areacity/area'), 'ext_name')
             )
         );
    $form->fieldsEnd();
    
    //或者
    $form->fields('省/市/区')->with(
-       $form->select('province', ' ', 4)->size(0, 12)->showLabel(false)->dataUrl(url('api/areacity/province'), 'ext_name')->withNext(
-            $form->select('city', ' ', 4)->size(0, 12)->showLabel(false)->dataUrl(url('api/areacity/city'), 'ext_name')->withNext(
-                $form->select('area', ' ', 4)->size(0, 12)->showLabel(false)->dataUrl(url('api/areacity/area'), 'ext_name')
+       $form->select('province', ' ', 4)->size(0, 12)->showLabel(false)->dataUrl(url('/api/areacity/province'), 'ext_name')->withNext(
+            $form->select('city', ' ', 4)->size(0, 12)->showLabel(false)->dataUrl(url('/api/areacity/city'), 'ext_name')->withNext(
+                $form->select('area', ' ', 4)->size(0, 12)->showLabel(false)->dataUrl(url('/api/areacity/area'), 'ext_name')
             )
         );
    );
+```
+
+### webman 跨越设置
+
+由于 webman 通过控制器判断当前应用
+
+`\tpext\areacity\api\controller\Areacity` 识别为 `areacity` 应用，而不是 `api`
+
+```php
+return [
+    // 全局中间件
+    '' => [
+    ],
+    'api' => [
+        \app\middleware\Cors::class,//跨域中间件（根据实际情况设置）
+    ],
+    'areacity' => [
+        \app\middleware\Cors::class,//为areacity也设置一个跨域中间件
+    ],
+];
 ```
